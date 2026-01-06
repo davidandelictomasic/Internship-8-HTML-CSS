@@ -12,17 +12,54 @@
             padding: 0;
             background-color: black;
         }
-        
-        .navigation {
-            text-align: left;
-            width: 200px;
-        }
-        header{
+
+        header {
+            padding: 0;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
+        hr {
+            background-color: orange;
+            border: none;
+            height: 2px;
+        }
+
+        #WHAT {
+            font-size: x-large;
+            background-color: beige;
+            padding: 10px;
+            border: 10px solid rgb(226, 55, 226);
+        }
+
+        #HOW {
+            font-size: x-large;
+            background-color: beige;
+            padding: 10px;
+            border: 10px solid rgb(55, 220, 226);
+        }
+
+        #BUT {
+            font-size: x-large;
+            background-color: beige;
+            padding: 10px;
+            border: 10px solid rgb(226, 156, 64);
+        }
+
+        h1 {
+            padding: 1px;
+            margin-top: 0px;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+        .navigation {
+            text-align: left;
+            width: 200px;
+        }
+        
     </style>
 </head>
 
@@ -41,7 +78,41 @@
         </div>
 
     </header>
-    <main>        
+    <main>
+        <hr>
+        <div id="WHAT">
+            <h1>What is this?</h1>
+            <p>This page was inspired by a <a>tweet from Salma </a>. Pretty HTML only pages are difficult to make well,
+                and accessible. But here we are. I'm trying my best.</p>
+        </div>
+        <hr>
+        <div id="HOW">
+            <h1>How does this work?</h1>
+            <p>The key to a lot of this is leveraging using tables with a role="presentation" attribute to make
+                decorated sections without css. If you view source on the page, you'll see that there are a LOT of
+                tables. The table tag typically is used to display tabular data and should NOT be used as a layout
+                method. However, since I am not allowed to use CSS, I am pretty much exclusively relying on tables for
+                this purpose. The presentation role tells the browser to not expose the table and its tabluar children
+                in the accessibility tree. This will make it easier to navigate for assistive technology.</p>
+            <p>I'm also leveraging some deprecated HTML elements from HTML 3.2 that you should never use. In order to be
+                "compliant", I've added the HTML 3.2 doctype at the top of the page:
+                <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+                This helps give a hint to the browser that we are going to use some older stuff.
+            </p>
+            <p>HOWEVER, I'm also using some newer things such as details/summary, section, main, header, and footer. So
+                I'm just making a mess of my doctype and what I should be actually using!
+
+            </p>
+
+        </div>
+        <hr>
+        <div id="BUT">
+            <h1>But why?</h1>
+            <img src="https://c.tenor.com/KjJTBQ9lftsAAAAd/why-huh.gif"" alt="">
+            <p>I make terrible things. This was an exciting nerd snipe on a sunday, And I took up the challenge!
+
+            </p>
+        </div>
     </main>
     <footer></footer>
 </body>
