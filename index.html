@@ -60,6 +60,13 @@
             width: 200px;
         }
         
+        footer{
+            color: white;
+            text-align: center;
+        }
+        a{
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -70,8 +77,8 @@
             <h6>Navigation</h6>
             <ul>
                 <li><a href="#WHAT">What is this?</a></li>
-                <li><a href="#">How does this work?</a></li>
-                <li><a href="#">But why?</a></li>
+                <li><a href="#HOW">How does this work?</a></li>
+                <li><a href="#BUT">But why?</a></li>
                 <li><a href="#">Frameset version</a></li>
 
             </ul>
@@ -82,7 +89,7 @@
         <hr>
         <div id="WHAT">
             <h1>What is this?</h1>
-            <p>This page was inspired by a <a>tweet from Salma </a>. Pretty HTML only pages are difficult to make well,
+            <p>This page was inspired by a <a href="#">tweet from Salma </a>. Pretty HTML only pages are difficult to make well,
                 and accessible. But here we are. I'm trying my best.</p>
         </div>
         <hr>
@@ -95,8 +102,8 @@
                 this purpose. The presentation role tells the browser to not expose the table and its tabluar children
                 in the accessibility tree. This will make it easier to navigate for assistive technology.</p>
             <p>I'm also leveraging some deprecated HTML elements from HTML 3.2 that you should never use. In order to be
-                "compliant", I've added the HTML 3.2 doctype at the top of the page:
-                <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+                "compliant", I've added the HTML 3.2 doctype at the top of the page:                
+                 <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</code>
                 This helps give a hint to the browser that we are going to use some older stuff.
             </p>
             <p>HOWEVER, I'm also using some newer things such as details/summary, section, main, header, and footer. So
@@ -108,12 +115,15 @@
         <hr>
         <div id="BUT">
             <h1>But why?</h1>
-            <img src="https://c.tenor.com/KjJTBQ9lftsAAAAd/why-huh.gif"" alt="">
-            <p>I make terrible things. This was an exciting nerd snipe on a sunday, And I took up the challenge!
+            <img src="https://c.tenor.com/KjJTBQ9lftsAAAAd/why-huh.gif" alt="">
+            <p>I make terrible things. This was an exciting <a href="#">nerd snipe</a> on a sunday, And I took up the challenge!
 
             </p>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Created by <a href="#">Alex Riviere</a></p>
+        <p>(One marquee for good measure...)</p>
+    </footer>
 </body>
 </html>
